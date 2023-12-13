@@ -20,7 +20,21 @@ To write a program to perform selection sort and insertion sort using python pro
 ## Program:
 i)	#Selection Sort
 ```
-
+''' 
+Program to sort the elements in the list using the Selection Sort algorithm.
+Developed by: vignesh v
+RegisterNumber: 23002301
+'''
+def selection_sort(nums):
+    for i in range(len(nums)):
+        lowest_index_value=i
+        for j in range(i+1,len(nums)):
+            if nums[j]<nums[lowest_index_value]:
+                lowest_index_value=j
+        nums[i],nums[lowest_index_value]=nums[lowest_index_value],nums[i]
+list_of_nums = eval(input())
+selection_sort(list_of_nums)
+print(list_of_nums)
 
 
 
@@ -28,7 +42,19 @@ i)	#Selection Sort
 ```
 ii)	#Insertion Sort
 ```
+Developed by: vignesh v
+RegisterNumber: 23002301
+def selection_sort(nums):
+    for i in range(len(nums)):
+        lowest_value_index = i
+        for j in range(i+1, len(nums)):
+            if nums[j] < nums[lowest_value_index]:
+                lowest_value_index = j
+        nums[i], nums[lowest_value_index] = nums[lowest_value_index], nums[i]
 
+list_of_nums = eval(input())
+selection_sort(list_of_nums)
+print(list_of_nums)
 
 
 
@@ -37,6 +63,8 @@ ii)	#Insertion Sort
 ```
 
 ## Output:
+<img width="563" alt="image" src="https://github.com/Vigneshv-23/Sorting-Algorithm/assets/110780412/ef73b2f0-5c43-4142-a991-6a2443ef511a">
+<img width="585" alt="image" src="https://github.com/Vigneshv-23/Sorting-Algorithm/assets/110780412/750c8fe7-efd4-4e4c-acb8-feec74ffe444">
 
 
 ## Result:
